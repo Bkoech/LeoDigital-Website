@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "MyriadPro";
+    src: url('../fonts/MyriadPro/MyriadPro-Regular.otf');
+    font-weight: normal;
+  	font-style: normal;
+}
+@font-face {
+    font-family: "HelveticaNeueCyr-Light";
+    src: url('../fonts/HelveticaNeue/HelveticaNeueCyr-Light.otf');
+    font-weight: lighter;
+  	font-style: normal;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+#threeD {
+    position: absolute;
+    top: 13%;
+    perspective: 4000px;
+}
+.digitals {
+	position: absolute;
+	font-size: 120pt;
+	color: #dd2e2c;
+	font-family:  "MyriadPro";
+	text-shadow:
+			-1px -1px 0 #c85151,
+           	-2px -2px 0 #962021,
+           	-2px -2px 0 #962021,
+           	-2px -2px 0 #962021,
+           	-2px -2px 0 #962021,
+           	-2px -2px 0 #962021,
+           	-3px -3px 0 #962021,
+           	-4px -4px 0 #962021
+           	;
+	letter-spacing: 5px;
+	transform-origin: 50% 50%;
+	/*transform: rotateX(50deg) rotateZ(20deg);*/
+}
+#goBack {
+	position: absolute;
+	left: 10%;
+	top: 5%;
+}
+#goBack i {
+	background: #8bc34a;
+	border-radius: 50%;
+	padding: 10px 13px;
+	font-size: 50px;
+	color: #fff;
+}
+#goBack span {
+    font-family: "HelveticaNeueCyr-Light";
+	font-size: 30px;
+	position: relative;
+	top: -5px;
+	left: 10px;
+}
+#GoTOmain {
+	position: absolute;
+	right: 10%;
+	top: 5%;
+}
+#GoTOmain i {
+    font-family: "HelveticaNeueCyr-Light";
+	background: #dd2e2c;
+	border-radius: 50%;
+	padding: 18px 24px;
+	font-size: 35px;
+	color: #fff;
+}

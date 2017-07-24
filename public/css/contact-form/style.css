@@ -1,0 +1,190 @@
+#contact-form .message, .btn {
+    text-align: center;
+    color: #fff;
+}
+.select, select {
+    cursor: pointer;
+}
+#contact-form .message {
+    height: 50px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 50px;
+    float: none;
+    margin-top: 20px;
+    display: none;
+}
+#contact-form .message.error {
+    background-color: #f44336;
+}
+#contact-form .message.success {
+    background-color: #4CAF50;
+}
+.contact-row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+textarea#content {
+    height: 100px!important;
+    padding: 0 16px;
+    margin-bottom: 25px;
+}
+.section-buttons .btn {
+    margin-bottom: 20px;
+}
+.btn {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .02em;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: 3px solid transparent;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background-color: #111;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.btn.btn-transparent {
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+.btn.btn-stroke {
+    color: #111;
+    border: 3px solid #111;
+    background-color: transparent;
+}
+.btn.btn-dark {
+    background-color: #333;
+}
+.btn.btn-white {
+    background-color: #fff;
+    color: #111;
+}
+.btn.btn-light {
+    background-color: #f5f5f5;
+    color: #111;
+}
+.btn.btn-color, .btn:hover, .btn-lg:hover {
+    background-color: #333;
+    color:#fff !important;
+}
+.btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    color:#fff;
+    line-height: 1.3333333;
+    border-radius: 25px;
+    border: 2px solid #000;
+    outline: none;
+}
+.btn:hover {
+    -webkit-transition: all .2 ease-in-out;
+    -moz-transition: all .2 ease-in-out;
+    -ms-transition: all .2 ease-in-out;
+    -o-transition: all .2 ease-in-out;
+    transition: all .2 ease-in-out;
+    color: #fff;
+    /*border-color: transparent;*/
+}
+.btn:focus {
+    outline: 0;
+    color: #fff;
+}
+.btn.btn-white:focus {
+    color: #111;
+}
+.btn {
+    font-size: 14px;
+    padding: 13px 34px;
+}
+.btn:hover {
+    background-color: #333;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #7a7a7a;
+    font-size: 15px;
+    line-height: 1.5;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    background: #fff;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.contact-email, .contact-name {
+    padding: 0 8px;
+}
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=date], input[type=search], select, textarea {
+    position: relative;
+    height: 47px;
+    line-height: 47px;
+    border: 2px solid #e3e3e3;
+    background-color: transparent;
+    width: 100%;
+    padding: 2px 16px;
+    color: #7a7a7a;
+    -webkit-transition: border-color .3s ease-in-out;
+    -moz-transition: border-color .3s ease-in-out;
+    -ms-transition: border-color .3s ease-in-out;
+    -o-transition: border-color .3s ease-in-out;
+    transition: border-color .3s ease-in-out;
+}
+input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=month]:focus, input[type=week]:focus, input[type=time]:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, input[type=tel]:focus, input[type=number]:focus, input[type=date]:focus, input[type=search]:focus, textarea:focus {
+    border-color: #000000;
+    outline: 0;
+    box-shadow: none;
+}
+textarea {
+    height: auto;
+    padding: 0 16px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #7a7a7a;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #7a7a7a;
+    opacity: 1;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #7a7a7a;
+    opacity: 1;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #7a7a7a;
+}
+select {
+    line-height: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}
+.select {
+    position: relative;
+}
+.select i {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    pointer-events: none;
+    font-size: 18px;
+}
+.contact-heading {
+    text-align: center;
+}
+.send-message {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 10px !important;
+}

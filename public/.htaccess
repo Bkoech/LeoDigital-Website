@@ -1,0 +1,79 @@
+<IfModule mod_rewrite.c>
+    # <IfModule mod_negotiation.c>
+    #     Options -MultiViews
+    # </IfModule>
+
+    RewriteEngine On
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+
+    # GZIP compression
+    # AddOutputFilterByType DEFLATE text/plain
+    # AddOutputFilterByType DEFLATE text/html
+    # AddOutputFilterByType DEFLATE text/xml
+    # AddOutputFilterByType DEFLATE text/css
+    # AddOutputFilterByType DEFLATE application/xml
+    # AddOutputFilterByType DEFLATE application/xhtml+xml
+    # AddOutputFilterByType DEFLATE application/rss+xml
+    # AddOutputFilterByType DEFLATE application/javascript
+    # AddOutputFilterByType DEFLATE application/x-javascript
+
+    # <files *.html>
+    #     SetOutputFilter DEFLATE
+    # </files>
+
+    # <ifModule mod_deflate.c>
+    #     <IfModule mod_filter.c>
+    #         AddOutputFilterByType DEFLATE text/plain text/html
+    #         AddOutputFilterByType DEFLATE text/css
+    #         AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+    #         AddOutputFilterByType DEFLATE text/xml application/xml application/xhtml+xml application/rss+xml
+    #         AddOutputFilterByType DEFLATE application/json
+    #         AddOutputFilterByType DEFLATE application/vnd.ms-fontobject application/x-font-ttf font/opentype image/svg+xml image/x-icon
+    #     </ifModule>
+    # </ifModule>
+
+
+    # Cache control
+    # <FilesMatch ".(jpg|jpeg|png|gif|swf|svg)$">
+    #     <IfModule mod_headers.c>
+    #         Header set Cache-Control "max-age=604800, public"
+    #     </IfModule>
+    # </FilesMatch>
+    # <FilesMatch ".(xml|txt|css|js|woff)$">
+    #     <IfModule mod_headers.c>
+    #         Header set Cache-Control "max-age=604800, proxy-revalidate"
+    #     </IfModule>
+    # </FilesMatch>
+
+
+    # Query string exploits
+    # <IfModule mod_rewrite.c>
+    #     RewriteCond %{QUERY_STRING} \.\.\/    [NC,OR]
+    #     RewriteCond %{QUERY_STRING} boot\.ini [NC,OR]
+    #     RewriteCond %{QUERY_STRING} tag\=     [NC,OR]
+    #     RewriteCond %{QUERY_STRING} ftp\:     [NC,OR]
+    #     RewriteCond %{QUERY_STRING} http\:    [NC,OR]
+    #     RewriteCond %{QUERY_STRING} https\:   [NC,OR]
+    #     RewriteCond %{QUERY_STRING} mosConfig [NC,OR]
+    #     RewriteCond %{QUERY_STRING} ^.*(\[|\]|\(|\)|<|>|'|"|;|\?|\*).* [NC,OR]
+    #     RewriteCond %{QUERY_STRING} ^.*(%22|%27|%3C|%3E|%5C|%7B|%7C).* [NC,OR]
+    #     RewriteCond %{QUERY_STRING} ^.*(%0|%A|%B|%C|%D|%E|%F|127\.0).* [NC,OR]
+    #     RewriteCond %{QUERY_STRING} ^.*(globals|encode|config|localhost|loopback).* [NC,OR]
+    #     RewriteCond %{QUERY_STRING} ^.*(request|select|insert|union|declare|drop).* [NC]
+    #     RewriteRule ^(.*)$ - [F,L]
+    # </IfModule>
+
+</IfModule>

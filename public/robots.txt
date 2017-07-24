@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin
+Disallow: /en
+Disallow: */blog
+Host: https://leodigital.com.ua
