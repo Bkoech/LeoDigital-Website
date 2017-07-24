@@ -44,13 +44,6 @@ class About extends Model
 	|--------------------------------------------------------------------------
 	*/
 
-	public function scopePublished($query)
-    {
-        return $query->where('status', 'PUBLISHED')
-                    ->where('date', '<=', date('Y-m-d'))
-                    ->orderBy('date', 'DESC');
-    }
-
 	/*
 	|--------------------------------------------------------------------------
 	| ACCESORS

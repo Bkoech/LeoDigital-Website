@@ -9,9 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\Facades\DB;
 
-use App\Models\Portfolio;
-use App\Models\PortfolioCategory;
-use App\Models\Client;
+use App\Models\{Portfolio, PortfolioCategory, Client};
 
 class PortfolioController extends Controller
 {
@@ -24,7 +22,7 @@ class PortfolioController extends Controller
     {
         $clients = Client::orderBy("rgt")->get();
 
-        $portfolios = Portfolio::where('status', 'PUBLISHED')->orderBy('date', "desc")->paginate(24);
+        $portfolios = Portfolio::where('status', 'PUBLISHED')->orderBy('rgt')->paginate(24);
 
 //        if($request->ajax()) {
 //            return [

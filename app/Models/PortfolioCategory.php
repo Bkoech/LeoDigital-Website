@@ -22,9 +22,8 @@ class PortfolioCategory extends Model
 
     protected $table = 'portfoliocategorys';
     protected $primaryKey = 'id';
-    // public $timestamps = true;
-    // protected $guarded = ['id'];
-    protected $fillable = ['name', 'parent_id', 'lang'];
+    public $timestamps = true;
+    protected $guarded = ['id'];
     // protected $hidden = [];
     // protected $dates = [];
 

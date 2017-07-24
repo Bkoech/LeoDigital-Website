@@ -28,7 +28,7 @@ class CreateProjectsTable extends Migration
             $table->string('banner')->nullable();
             $table->string('pdf')->nullable();
             $table->enum('status', ['PUBLISHED', 'DRAFT'])->default('PUBLISHED');
-            $table->date('date');
+            $table->date('date')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

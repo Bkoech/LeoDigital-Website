@@ -28,7 +28,6 @@ class CreatePortfoliosTable extends Migration
             $table->string('photos')->nullable();
             $table->text('options')->nullable();
             $table->enum('status', ['PUBLISHED', 'DRAFT'])->default('PUBLISHED');
-            $table->date('date');
             $table->timestamps();
             $table->softDeletes();
         });

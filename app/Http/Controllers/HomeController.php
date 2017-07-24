@@ -3,10 +3,7 @@
 namespace App\Http\Controllers;
 
 use Identify;
-// use App\Http\Requests;
 use Illuminate\Http\Request;
-// use Illuminate\Routing\UrlGenerator;
-// use Illuminate\Support\Facades\DB;
 use App\Models\{Client, Project, Service, VisitorId, VisitorIp};
 
 class HomeController extends Controller
@@ -37,8 +34,6 @@ class HomeController extends Controller
         $projects = Project::getProjects();
 
         $services = Service::getServices();
-
-        // $browser = Identify::browser()->getName();
         
         return array_key_exists(request()->segment(1), config('app.locales')) ? view('home', compact('clients', 'projects', 'services')) : redirect('/'.config('app.locale'));
     }

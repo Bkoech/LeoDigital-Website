@@ -53,23 +53,6 @@ class PortfolioCrudController extends CrudController {
                                 ],
                             ]);
         $this->crud->addField([
-                                'name' => 'date',
-                                'label' => 'Дата',
-                                'type' => 'date',
-                                'value' => date('Y-m-d'),
-                                'wrapperAttributes' => [
-                                    'class' => 'form-group col-md-3',
-                                ],
-                            ], 'create');
-        $this->crud->addField([
-                                'name' => 'date',
-                                'label' => 'Дата',
-                                'type' => 'date',
-                                'wrapperAttributes' => [
-                                    'class' => 'form-group col-md-3',
-                                ],
-                            ], 'update');
-        $this->crud->addField([
                                 'name' => 'slug',
                                 'label' => 'Slug (URL)',
                                 'type' => 'text',

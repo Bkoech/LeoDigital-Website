@@ -11,7 +11,6 @@
 |
 */
 
-// Backpack\NewsCRUD
 CRUD::resource('article', 'ArticleCrudController');
 CRUD::resource('category', 'CategoryCrudController');
 CRUD::resource('tag', 'TagCrudController');

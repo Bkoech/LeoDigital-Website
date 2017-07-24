@@ -8,9 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 
-use App\Models\About;
-use App\Models\Client;
-
+use App\Models\{About, Client};
 
 class AboutController extends Controller
 {

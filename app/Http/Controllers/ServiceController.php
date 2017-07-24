@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -21,21 +20,6 @@ class ServiceController extends Controller
         $services = Service::all();
         $services->sortByDesc('created_at');
         return view('service', compact('services'));
-    }
-
-    public function digital()
-    {
-        return view('service.digital');    
-    }
-
-    public function creation()
-    {
-        return view('service.creation');    
-    }
-
-    public function design()
-    {
-        return view('service.design');    
     }
 
     /**

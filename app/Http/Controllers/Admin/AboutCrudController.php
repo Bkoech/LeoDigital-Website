@@ -44,11 +44,6 @@ class AboutCrudController extends CrudController {
                                 'label' => 'Текст',
                                 'type' => 'ckeditor'
                             ]);
-        // $this->crud->addField([
-        //                         'label' => "Картинка",
-        //                         'name' => "photo",
-        //                         'type' => 'browse',
-        //                     ]);
 
         $this->crud->enableAjaxTable();
 

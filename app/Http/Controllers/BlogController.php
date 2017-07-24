@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\UrlGenerator;
-use App\Models\{Client};
 
+use App\Models\Client;
 
 class BlogController extends Controller
 {

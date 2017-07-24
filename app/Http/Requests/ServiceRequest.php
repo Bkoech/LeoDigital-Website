@@ -26,10 +26,9 @@ class ServiceRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
     {
         return [
             'title' => 'required|min:2|max:255',
-            // 'slug' => 'unique:services,slug,'.\Request::get('id'),
+            'slug' => 'unique:services,slug,'.\Request::get('id'),
             'description' => 'required|min:2',
             'content' => 'required|min:2',
-            'status' => 'required',
             'icon' => 'required',
         ];
     }

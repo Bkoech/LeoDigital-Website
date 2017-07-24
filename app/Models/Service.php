@@ -28,8 +28,6 @@ class Service extends Model
     // protected $hidden = [];
     // protected $dates = [];
     protected $translatable = ['title', 'description', 'content'];
-    protected $casts = [
-    ];
 
     /**
      * Return the sluggable configuration array for this model.

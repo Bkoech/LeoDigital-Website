@@ -17,11 +17,10 @@ class VisitorId extends Model
     protected $table = 'visitors_id';
     protected $primaryKey = 'id';
     public $timestamps = true;
-    // protected $guarded = ['id'];
+    protected $guarded = ['id'];
     // protected $fillable = [];
     // protected $hidden = [];
     // protected $dates = [];
-    protected $fillable = ['visitor'];
 
     /*
     |--------------------------------------------------------------------------

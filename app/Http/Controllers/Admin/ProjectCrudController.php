@@ -29,6 +29,7 @@ class ProjectCrudController extends CrudController {
 
         $this->crud->allowAccess('reorder');
         $this->crud->enableReorder('title', 1);
+        $this->crud->orderBy('rgt');
 
         // ------ CRUD COLUMNS
         $this->crud->addColumn([
@@ -39,7 +40,6 @@ class ProjectCrudController extends CrudController {
                                 'name' => 'status',
                                 'label' => 'Статус',
                             ]);
-        $this->crud->orderBy('rgt');
 
         // ------ CRUD FIELDS
         $this->crud->addField([

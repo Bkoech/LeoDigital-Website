@@ -18,8 +18,7 @@ class Contact extends Model
 	protected $table = 'contacts';
 	protected $primaryKey = 'id';
 	public $timestamps = true;
-	// protected $guarded = ['id'];
-	protected $fillable = ['name', 'email', 'phone', 'url', 'content'];
+	protected $guarded = ['id'];
 	// protected $hidden = [];
     // protected $dates = [];
 

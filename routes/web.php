@@ -10,14 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('login', function () {
-//     return redirect('/admin/login');
-// });
-
-// Route::get('register', function () {
-//     return redirect('/admin/register');
-// });
-
 
 Route::resource('/', 'HomeController');
 Route::resource('/language/{lang}/', 'LanguageController@index');
@@ -26,5 +18,4 @@ Route::resource('project', 'ProjectController');
 Route::resource('portfolio', 'PortfolioController');
 Route::resource('portfolio_single', 'PortfolioController@test');
 Route::resource('blog', 'BlogController');
-
 Route::resource('contact', 'ContactController');

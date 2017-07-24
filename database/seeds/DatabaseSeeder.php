@@ -62,5 +62,9 @@ class DatabaseSeeder extends Seeder
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now(),
         ]);
+        $this->call(PortfolioTableSeeder::class);
+        $this->call(ProjectTableSeeder::class);
+        $this->call(ClientTableSeeder::class);
+        $this->call(ServiceTableSeeder::class);
     }
 }
